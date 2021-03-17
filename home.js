@@ -1,5 +1,3 @@
-import search from    './src/search.svg'
-
 
 function home (){
 
@@ -40,8 +38,16 @@ function home (){
     searchBox.appendChild(input)
     homeBox.append(homeTittle, searchBox, homeDescription);
     homeContainer.appendChild(homeBox);
+   
+   function getValue(array[i]) {
+       const data = document.getElementById('mySelect').value=array[i];
+   }
+   
+   
     return homeContainer;
+
+
     
     }
     
-    export default home;
+    export default home; 

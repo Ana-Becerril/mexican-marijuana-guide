@@ -1,0 +1,1 @@
+const data = document.getElementById('mySelect').value=array[i];
