@@ -39,9 +39,6 @@ function home (){
     homeBox.append(homeTittle, searchBox, homeDescription);
     homeContainer.appendChild(homeBox);
    
-   function getValue(array[i]) {
-       const data = document.getElementById('mySelect').value=array[i];
-   }
    
    
     return homeContainer;
