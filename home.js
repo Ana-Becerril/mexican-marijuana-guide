@@ -13,23 +13,32 @@ function home (){
     homeTittle.innerHTML="Marijuana Guide"
     homeTittle.classList.add("home-tittle");
 
-    const iconSearchContainer=document.createElement("div")
-    iconSearchContainer.classList.add("icon-container");
-    iconSearchContainer.classList.add("bounce-in-left")
-    const iconSearch=document.createElement("img");
-    iconSearch.src = search;    
-    iconSearch.classList.add("icon-search");
-
-    const input=document.createElement("input");
+    const searchBox=document.createElement("div")
+    searchBox.classList.add("search-box");
+    var input = document.createElement("div")
     input.classList.add("input");
-    input.type=Text
+    input.classList.add("bounce-in-left")
+
+    var array = ["Sativa","Indica","Hybrid"];
+
+    var selectList = document.createElement("select");
+    selectList.id = "mySelect";
+    input.appendChild(selectList);
+
+    for (var i = 0; i < array.length; i++) {
+        var option = document.createElement("option");
+        option.classList.add("options");
+        option.value = array[i];
+        option.text = array[i];
+        selectList.appendChild(option);
+    }
 
     const homeDescription=document.createElement("div");
     homeDescription.innerHTML="Flavors and Effects"
     homeDescription.classList.add("home-description");
-   
-    iconSearchContainer.appendChild(iconSearch);
-    homeBox.append(homeTittle, iconSearchContainer, homeDescription);
+
+    searchBox.appendChild(input)
+    homeBox.append(homeTittle, searchBox, homeDescription);
     homeContainer.appendChild(homeBox);
     return homeContainer;
     
