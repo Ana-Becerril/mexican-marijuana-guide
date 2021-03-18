@@ -115,7 +115,9 @@
     }
   }
   
-
+*{
+    outline: none;
+}
 
 @font-face{
     font-family: 'Amatic';
@@ -150,7 +152,7 @@ body, html, .parent{
     flex-direction: column;
     width: 600px;
     height: 300px;
-    background-color: whitesmoke;
+    background-color: black;
     opacity: 0.7;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +162,7 @@ body, html, .parent{
     width: 100%;
     height: 40%;
     font-size: 80px;
-    color:  black;
+    color:  white;
     font-family:'Amatic';
     align-items: center;
     text-align: center;
@@ -211,7 +213,7 @@ select {
     width: 100%;
     height: 40%;
     font-size: 80px;
-    color: black;
+    color: white;
     font-family:'Amatic';
     text-align: center;
 }

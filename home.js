@@ -43,12 +43,8 @@ function home (){
     homeBox.append(homeTittle, searchBox, homeDescription);
     homeContainer.appendChild(homeBox);
    
-   
-   
     return homeContainer;
 
-
-    
     }
     
     export default home; 
