@@ -20,10 +20,15 @@ function home (){
     var array = ["Sativa","Indica","Hybrid"];
 
     var selectList = document.createElement("select");
+    selectList.classList.add("race");
     selectList.id = "mySelect";
+        selectList.addEventListener('change', (event) => {
+        const result = document.querySelector('.result');
+        console.log(`Tipo ${event.target.value}`);
+    });
     input.appendChild(selectList);
 
-    for (var i = 0; i < array.length; i++) {
+    for (var i = 0; i < array.length;i++) {
         var option = document.createElement("option");
         option.classList.add("options");
         option.value = array[i];
