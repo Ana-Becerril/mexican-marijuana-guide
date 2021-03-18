@@ -5,7 +5,7 @@ import items from "../items"
 import homeImage from './home-image.jpg';
 
 const parent=document.getElementById("parent")
-parent.append(home(), items());
+parent.append(home());
 
 const hbImage = document.createElement("img");
 hbImage.src = homeImage;

@@ -23,7 +23,6 @@ function home (){
     selectList.classList.add("race");
     selectList.id = "mySelect";
         selectList.addEventListener('change', (event) => {
-        const result = document.querySelector('.result');
         console.log(`Tipo ${event.target.value}`);
     });
     input.appendChild(selectList);
